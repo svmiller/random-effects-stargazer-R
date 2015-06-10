@@ -36,7 +36,7 @@ Tables <- insertrow(Tables,hline,r+2)
 # Type Tables into the terminal to see where it put it.
 
 # Know your random effect groupings. In this case, they're "replicate" and "recipe:replicate". 
-# Know they're order too. Recipe:replicate comes first. Let's get the number of groupings in each random effect.
+# Know their order too. Recipe:replicate comes first. Let's get the number of groupings in each random effect.
 
 num.recipe.replicate <- sapply(ranef(M1),nrow)[1]
 num.replicate <- sapply(ranef(M1),nrow)[2]
